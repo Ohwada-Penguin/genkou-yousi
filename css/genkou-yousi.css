@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./color_for_penguin.css");
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+*{
+    font-size:15px;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.wrap{
+    width:1200px;
+    /*1rem*1.6 が1文字分の大きさ、それが25文字分積み重なり、border分(26px)も加算する*/
+    height:calc(calc(calc(calc(1rem * 1.6) * 25) + 26px) + 2rem);
+    margin:2rem auto;
+    padding:1rem;
+    writing-mode:vertical-rl;
+    text-orientation:upright;
+    line-height:1.6rem;
+    /*そもそも1セルに対して1文字だからletter-spacingはいらなかったわ*/
+    /*letter-spacing:0.3rem;*/
+    overflow:scroll;
+    border:1px solid #000;
+}
+
+#title{
+    display:block;
+    width:calc(calc(1.6rem * 1.5) + 2px);
+    margin-top:calc(1.6rem + 2px);
+    margin-left:1rem;
+}
+
+.kei-sen{
+    /*文字数でwidthは変えるよ*/
+    width:200vw;
+    height:calc(100% - 2rem);
+    margin:auto 0;
+    display:grid;
+    grid-auto-columns:1fr;
+    /*1行の幅はline-height+border*/
+    grid-template-rows:calc( calc(1rem * 1.6) + 2px);
+    gap:0.5rem;
+    border:1px solid var(--color_sora);
+}
+
+/*classの属性値として"gyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="gyou"みたいな単一でも機能するよ。*/
+[class~=gyou]{
+    font-size:0;
+    letter-spacing:0;
+    padding:0;
+    margin:0;
+}
+.moji{
+    list-style-type:none;
+}
+/*moji_から始まるidを持つタグ全てに適応するCSSやで*/
+[id^="moji_"]{
+    display:inline-block;
+    /*一文字分の横幅 = line-height*/
+    width:1.6rem;
+    height:1.6rem;
+    /*border:1px solid #000;*/
+    text-align:center;
+    border-style:dashed;
+    border-color:#666;
+    border-width:1px 1px 0 1px;
+}
+/*最後の文字だけ底辺にborder入れてるよ*/
+li:last-of-type{
+    border-width:1px;
+}
+/*titleの文字だけ1.5倍の大きさにしてるよ*/
+#title > .gyou > .moji{
+    font-size:calc(1rem * 1.5);
+    width:calc(1.6rem * 1.5);
+    height:calc(1.6rem * 1.5);
+}
+
+p{
+    text-indent:1rem;
+    border:1px solid #666;
+}
