@@ -31,7 +31,7 @@
     margin-left:1rem;
 }
 
-.kei-sen{
+.waku-sen{
     /*文字数でwidthは変えるよ*/
     /*width:200vw;*/
     height:100%;
@@ -39,11 +39,15 @@
     display:inline-flex;
     flex-direction:column;
     gap:0.5rem;
-    border:1px solid var(--color_sora);
+    /*border:1px solid var(--color_sora);*/
+}
+
+.danraku{
+    margin:0;
 }
 
 /*classの属性値として"gyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="gyou"みたいな単一でも機能するよ。*/
-[class~=gyou]{
+[class~=bunsyou]{
     display:inline-flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -56,30 +60,30 @@
     margin:0 0 0 -0.5rem;
     list-style-type:none;
 }
-/*moji_から始まるidを持つタグ全てに適応するCSSやで*/
-[id^="moji_"]{
+/*class="keisen"を持つタグ全てに適応するCSSやで*/
+                                    /*[id^="moji_"]*//*←は修正前の名残り。id="moji_◯"みたいなmoji_から始まるid全てに適応させるセレクタの書き方だよ*/
+[class~="keisen"]{
     /* display:inline-block; */
     /*一文字分の横幅 = line-height*/
     width:1.6rem;
     height:1.6rem;
     /*marginのbottomをネガティブマージンにすることでborderを重ねて表示してるよ*/
-    margin:0 0 -1px 0.5rem;
+    margin:0 0 -1px 0.7rem;
     text-align:center;
-    border-style:dashed;
     border-color:#666;
     /*左右だけborderをつける*/
     border-width:1px 1px 1px 1px;
+    border-style:dashed solid;    
+}
+
+[id^="moji_"]{
+    /*追々記述予定*/
 }
 
 /*titleの文字だけ1.5倍の大きさにしてるよ*/
-#title > .gyou > .moji{
+.title > .bunsyou > .keisen{
     font-size:calc(1rem * 1.5);
     width:calc(1.6rem * 1.5);
     height:calc(1.6rem * 1.5);
     line-height:calc(1.6rem * 1.5);
-}
-
-p{
-    text-indent:1rem;
-    border:1px solid #666;
 }
