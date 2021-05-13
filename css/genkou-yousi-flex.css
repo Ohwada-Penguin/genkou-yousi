@@ -24,11 +24,23 @@
     border:1px solid #000;
 }
 
-#title{
+.title{
     display:inline-block;
     width:calc(calc(1.6rem * 1.5) + 2px);
     margin-top:calc(1.6rem + 2px);
-    margin-left:1rem;
+    margin-left:1.6rem;
+}
+/*titleの文字だけ1.5倍の大きさにしてるよ*/
+.title > .bunsyou > .keisen{
+    font-size:calc(1rem * 1.5);
+    width:calc(1.6rem * 1.5);
+    height:calc(1.6rem * 1.5);
+    line-height:calc(1.6rem * 1.5);
+    margin:0 0 -1px 0.7rem;
+    text-align:center;
+    border-color:#666;
+    border-width:1px 1px 1px 1px;
+    border-style:dashed solid;    
 }
 
 .waku-sen{
@@ -46,7 +58,9 @@
     margin:0;
 }
 
-/*classの属性値として"gyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="gyou"みたいな単一でも機能するよ。*/
+/*classの属性値として"bunsyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="bunsyou"みたいな単一でも機能するよ。*/
+/*ぶっちゃけ普通の[class~="bunsyou"]{}は.bunsyou{}と同じクラスセレクタ*/
+/*[class*="bunsyou"]{}だと <hoge class="bunsyouuuuuuuuuuuu"></hoge>も含んじゃうからここら辺注意ね*/
 [class~=bunsyou]{
     display:inline-flex;
     flex-direction:row;
@@ -67,6 +81,7 @@
     /*一文字分の横幅 = line-height*/
     width:1.6rem;
     height:1.6rem;
+    line-height:1.6rem;
     /*marginのbottomをネガティブマージンにすることでborderを重ねて表示してるよ*/
     margin:0 0 -1px 0.7rem;
     text-align:center;
@@ -76,14 +91,37 @@
     border-style:dashed solid;    
 }
 
+/*[id*/
 [id^="moji_"]{
     /*追々記述予定*/
 }
 
-/*titleの文字だけ1.5倍の大きさにしてるよ*/
-.title > .bunsyou > .keisen{
-    font-size:calc(1rem * 1.5);
-    width:calc(1.6rem * 1.5);
-    height:calc(1.6rem * 1.5);
-    line-height:calc(1.6rem * 1.5);
+/*第◯段落のx文字目からy文字目までをほにゃららするCSS*/
+#danraku_1 .moji:nth-of-type(n+1):nth-child(-n+16){
+    /* animation: typing 3s steps(16) linear alternate; */
+    color:red;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    /*animation: typing 4s ease-in-out 0 1 normal none;*/
+}
+#danraku_1 li:nth-of-type(3){animation: typing 3s ease-in-out 0000ms 1 normal backwards;}
+/* #danraku_1 .moji:nth-of-type(n+2){animation: typing 5s ease-in-out 0.5s 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+3){animation: typing 6s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+4){animation: typing 7s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+5){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+6){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+7){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+8){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+9){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+10){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+11){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+12){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+13){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+14){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+15){animation: typing 4s ease-in-out 0 1 normal none;}
+#danraku_1 .moji:nth-of-type(n+16){animation: typing 4s ease-in-out 5s 1 normal none;} */
+
+@keyframes typing{
+    from{
+        opacity:0;
+    }
 }

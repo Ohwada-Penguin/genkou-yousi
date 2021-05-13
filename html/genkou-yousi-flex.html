@@ -15,290 +15,261 @@
                     <div class="title">
                         <ul class="bunsyou">
                             <!--ul#title>li#moji_title_$.moji*文字数　これでタイトルの文字grid作れるぜ-->
-                            <li id="moji_title_1" class="keisen">目</li>
-                            <li id="moji_title_2" class="keisen">薬</li>
+                            <li id="title_moji_1" class="keisen">目</li>
+                            <li id="title_moji_2" class="keisen">薬</li>
                         </ul>
                     </div>
+
+                    <!--原文:ケイ氏は、ひとりで暮らしていた。そのへやの机の上には、ビーカーや試験管をはじめ、化学用の器具が並んでいた。-->
+                    <!--ul.bunsyou>li#moji_$.keisen*>span.moji これで<li class="keisen"><span id="moji_◯" class="moji"><span></li>からの連番になるゾ〜-->
+                    <!--ul.bunsyou>li#moji_$@◯.keisen*>span.moji これで<li class="keisen"><span id="moji_◯" class="moji"><span></li>で途中からの連番になるゾ〜-->
+                    <!--空白も一文字として扱うぞう。段落はしっかりわけるとええぞ。-->
                     <div class="waku-sen">
-                        <p class="danraku">
+                        <div id="danraku_1" class="danraku">
                             <ul class="bunsyou">
-                                <!--原文:ケイ氏は、ひとりで暮らしていた。そのへやの机の上には、ビーカーや試験管をはじめ、化学用の器具が並んでいた。-->
-                                <!--ul.bunsyou>li*.keisen>span#moji_$.moji これで<li class="keisen"><span id="moji_◯" class="moji"><span></li>からの連番になるゾ〜-->
-                                <!--ul.bunsyou>li*.keisen>span#moji_$@◯.moji* これで<li class="keisen"><span id="moji_◯" class="moji"><span></li>で途中からの連番になるゾ〜-->
-                                <!--li.keisen>span.moji-kuuhaku{&emsp;}で文章の一文字目空白作成-->
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen">
-                                    <span id="moji_1" class="moji">ケ</span>
+                                <li id="moji_1" class="keisen">
+                                    <span class="moji">&emsp;</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_2" class="moji">イ</span>
+                                <li id="moji_2" class="keisen">
+                                    <span class="moji">ケ</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_3" class="moji">氏</span>
+                                <li id="moji_3" class="keisen">
+                                    <span class="moji">イ</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_4" class="moji">は</span>
+                                <li id="moji_4" class="keisen">
+                                    <span class="moji">氏</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_5" class="moji">、</span>
+                                <li id="moji_5" class="keisen">
+                                    <span class="moji">は</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_6" class="moji">ひ</span>
+                                <li id="moji_6" class="keisen">
+                                    <span class="moji">、</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_7" class="moji">と</span>
+                                <li id="moji_7" class="keisen">
+                                    <span class="moji">ひ</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_8" class="moji">り</span>
+                                <li id="moji_8" class="keisen">
+                                    <span class="moji">と</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_9" class="moji">で</span>
+                                <li id="moji_9" class="keisen">
+                                    <span class="moji">り</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_10" class="moji">暮</span>
+                                <li id="moji_10" class="keisen">
+                                    <span class="moji">で</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_11" class="moji">ら</span>
+                                <li id="moji_11" class="keisen">
+                                    <span class="moji">暮</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_12" class="moji">し</span>
+                                <li id="moji_12" class="keisen">
+                                    <span class="moji">ら</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_13" class="moji">て</span>
+                                <li id="moji_13" class="keisen">
+                                    <span class="moji">し</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_14" class="moji">い</span>
+                                <li id="moji_14" class="keisen">
+                                    <span class="moji">て</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_15" class="moji">た</span>
+                                <li id="moji_15" class="keisen">
+                                    <span class="moji">い</span>
                                 </li>
-                                <li class="keisen">
-                                    <span id="moji_16" class="moji">。</span>
+                                <li id="moji_16" class="keisen">
+                                    <span class="moji">た</span>
                                 </li>
-                                <!-- <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li>
-                                <li class="keisen"><span class="moji-kuuhaku">&emsp;</span></li> -->
-                                </ul>
-                                <ul class="bunsyou">
-                                <li class="keisen">
-                                    <span id="moji_17" class="moji">そ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_18" class="moji">の</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_19" class="moji">部</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_20" class="moji">屋</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_21" class="moji">の</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_22" class="moji">机</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_23" class="moji">の</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_24" class="moji">上</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_25" class="moji">に</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_26" class="moji">は</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_27" class="moji">、</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_28" class="moji">ビ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_29" class="moji">ー</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_30" class="moji">カ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_31" class="moji">ー</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_32" class="moji">や</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_33" class="moji">試</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_34" class="moji">験</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_35" class="moji">管</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_36" class="moji">を</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_37" class="moji">は</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_38" class="moji">じ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_39" class="moji">め</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_40" class="moji">、</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_41" class="moji">化</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_42" class="moji">学</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_43" class="moji">用</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_44" class="moji">の</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_45" class="moji">器</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_46" class="moji">具</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_47" class="moji">が</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_48" class="moji">並</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_49" class="moji">ん</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_50" class="moji">で</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_51" class="moji">い</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_52" class="moji">た</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_53" class="moji">。</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_54" class="moji">各</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_55" class="moji">種</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_56" class="moji">の</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_57" class="moji">薬</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_58" class="moji">品</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_59" class="moji">や</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_60" class="moji">、</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_61" class="moji">植</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_62" class="moji">物</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_63" class="moji">か</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_64" class="moji">ら</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_65" class="moji">絞</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_66" class="moji">っ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_67" class="moji">た</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_68" class="moji">汁</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_69" class="moji">を</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_70" class="moji">入</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_71" class="moji">れ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_72" class="moji">た</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_73" class="moji">ビ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_74" class="moji">ン</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_75" class="moji">も</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_76" class="moji">あ</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_77" class="moji">る</span>
-                                </li>
-                                <li class="keisen">
-                                    <span id="moji_78" class="moji">。</span>
+                                <li id="moji_17" class="keisen">
+                                    <span class="moji">。</span>
                                 </li>
                             </ul>
-                        </p>
-                        <ul class="gyou">
-                            <!--原文:各種の薬品や、植物からしぼった知るを入れたビンもある。-->
-                            <!-- <li id="moji_25" class="keiesn">に</li>
-                            <li id="moji_26" class="keiesn">は</li>
-                            <li id="moji_27" class="keiesn">、</li>
-                            <li id="moji_28" class="keiesn">ビ</li>
-                            <li id="moji_29" class="keiesn">ー</li>
-                            <li id="moji_30" class="keiesn">カ</li>
-                            <li id="moji_31" class="keiesn">ー</li>
-                            <li id="moji_32" class="keiesn">や</li>
-                            <li id="moji_33" class="keiesn">試</li>
-                            <li id="moji_34" class="keiesn">験</li>
-                            <li id="moji_35" class="keiesn">管</li>
-                            <li id="moji_36" class="keiesn">を</li>
-                            <li id="moji_37" class="keiesn">は</li>
-                            <li id="moji_38" class="keiesn">じ</li>
-                            <li id="moji_39" class="keiesn">め</li>
-                            <li id="moji_40" class="keiesn">、</li>
-                            <li id="moji_41" class="keiesn">化</li>
-                            <li id="moji_42" class="keiesn">学</li>
-                            <li id="moji_43" class="keiesn">用</li>
-                            <li id="moji_44" class="keiesn">の</li>
-                            <li id="moji_45" class="keiesn">器</li>
-                            <li id="moji_46" class="keiesn">具</li>
-                            <li id="moji_47" class="keiesn">が</li>
-                            <li id="moji_48" class="keiesn">並</li> -->
-                        </ul>
+                        </div>
+                        <div id="danraku_2" class="danraku">
+                            <ul class="bunsyou">
+                                <li id="moji_1" class="keisen">
+                                    <span class="moji">そ</span>
+                                </li>
+                                <li id="moji_2" class="keisen">
+                                    <span class="moji">の</span>
+                                </li>
+                                <li id="moji_3" class="keisen">
+                                    <span class="moji">部</span>
+                                </li>
+                                <li id="moji_4" class="keisen">
+                                    <span class="moji">屋</span>
+                                </li>
+                                <li id="moji_5" class="keisen">
+                                    <span class="moji">の</span>
+                                </li>
+                                <li id="moji_6" class="keisen">
+                                    <span class="moji">机</span>
+                                </li>
+                                <li id="moji_7" class="keisen">
+                                    <span class="moji">の</span>
+                                </li>
+                                <li id="moji_8" class="keisen">
+                                    <span class="moji">上</span>
+                                </li>
+                                <li id="moji_9" class="keisen">
+                                    <span class="moji">に</span>
+                                </li>
+                                <li id="moji_10" class="keisen">
+                                    <span class="moji">は</span>
+                                </li>
+                                <li id="moji_11" class="keisen">
+                                    <span class="moji">、</span>
+                                </li>
+                                <li id="moji_12" class="keisen">
+                                    <span class="moji">ビ</span>
+                                </li>
+                                <li id="moji_13" class="keisen">
+                                    <span class="moji">ー</span>
+                                </li>
+                                <li id="moji_14" class="keisen">
+                                    <span class="moji">カ</span>
+                                </li>
+                                <li id="moji_15" class="keisen">
+                                    <span class="moji">ー</span>
+                                </li>
+                                <li id="moji_16" class="keisen">
+                                    <span class="moji">や</span>
+                                </li>
+                                <li id="moji_17" class="keisen">
+                                    <span class="moji">試</span>
+                                </li>
+                                <li id="moji_18" class="keisen">
+                                    <span class="moji">験</span>
+                                </li>
+                                <li id="moji_19" class="keisen">
+                                    <span class="moji">管</span>
+                                </li>
+                                <li id="moji_20" class="keisen">
+                                    <span class="moji">を</span>
+                                </li>
+                                <li id="moji_21" class="keisen">
+                                    <span class="moji">は</span>
+                                </li>
+                                <li id="moji_22" class="keisen">
+                                    <span class="moji">じ</span>
+                                </li>
+                                <li id="moji_23" class="keisen">
+                                    <span class="moji">め</span>
+                                </li>
+                                <li id="moji_24" class="keisen">
+                                    <span class="moji">、</span>
+                                </li>
+                                <li id="moji_25" class="keisen">
+                                    <span class="moji">化</span>
+                                </li>
+                                <li id="moji_26" class="keisen">
+                                    <span class="moji">学</span>
+                                </li>
+                                <li id="moji_27" class="keisen">
+                                    <span class="moji">用</span>
+                                </li>
+                                <li id="moji_28" class="keisen">
+                                    <span class="moji">の</span>
+                                </li>
+                                <li id="moji_29" class="keisen">
+                                    <span class="moji">器</span>
+                                </li>
+                                <li id="moji_30" class="keisen">
+                                    <span class="moji">具</span>
+                                </li>
+                                <li id="moji_31" class="keisen">
+                                    <span class="moji">が</span>
+                                </li>
+                                <li id="moji_32" class="keisen">
+                                    <span class="moji">並</span>
+                                </li>
+                                <li id="moji_33" class="keisen">
+                                    <span class="moji">ん</span>
+                                </li>
+                                <li id="moji_34" class="keisen">
+                                    <span class="moji">で</span>
+                                </li>
+                                <li id="moji_35" class="keisen">
+                                    <span class="moji">い</span>
+                                </li>
+                                <li id="moji_36" class="keisen">
+                                    <span class="moji">た</span>
+                                </li>
+                                <li id="moji_37" class="keisen">
+                                    <span class="moji">。</span>
+                                </li>
+                                <li id="moji_38" class="keisen">
+                                    <span class="moji">各</span>
+                                </li>
+                                <li id="moji_39" class="keisen">
+                                    <span class="moji">種</span>
+                                </li>
+                                <li id="moji_40" class="keisen">
+                                    <span class="moji">の</span>
+                                </li>
+                                <li id="moji_41" class="keisen">
+                                    <span class="moji">薬</span>
+                                </li>
+                                <li id="moji_42" class="keisen">
+                                    <span class="moji">品</span>
+                                </li>
+                                <li id="moji_43" class="keisen">
+                                    <span class="moji">や</span>
+                                </li>
+                                <li id="moji_44" class="keisen">
+                                    <span class="moji">、</span>
+                                </li>
+                                <li id="moji_45" class="keisen">
+                                    <span class="moji">植</span>
+                                </li>
+                                <li id="moji_46" class="keisen">
+                                    <span class="moji">物</span>
+                                </li>
+                                <li id="moji_47" class="keisen">
+                                    <span class="moji">か</span>
+                                </li>
+                                <li id="moji_48" class="keisen">
+                                    <span class="moji">ら</span>
+                                </li>
+                                <li id="moji_49" class="keisen">
+                                    <span class="moji">絞</span>
+                                </li>
+                                <li id="moji_50" class="keisen">
+                                    <span class="moji">っ</span>
+                                </li>
+                                <li id="moji_51" class="keisen">
+                                    <span class="moji">た</span>
+                                </li>
+                                <li id="moji_52" class="keisen">
+                                    <span class="moji">汁</span>
+                                </li>
+                                <li id="moji_53" class="keisen">
+                                    <span class="moji">を</span>
+                                </li>
+                                <li id="moji_54" class="keisen">
+                                    <span class="moji">入</span>
+                                </li>
+                                <li id="moji_55" class="keisen">
+                                    <span class="moji">れ</span>
+                                </li>
+                                <li id="moji_56" class="keisen">
+                                    <span class="moji">た</span>
+                                </li>
+                                <li id="moji_57" class="keisen">
+                                    <span class="moji">ビ</span>
+                                </li>
+                                <li id="moji_58" class="keisen">
+                                    <span class="moji">ン</span>
+                                </li>
+                                <li id="moji_59" class="keisen">
+                                    <span class="moji">も</span>
+                                </li>
+                                <li id="moji_60" class="keisen">
+                                    <span class="moji">あ</span>
+                                </li>
+                                <li id="moji_61" class="keisen">
+                                    <span class="moji">る</span>
+                                </li>
+                                <li id="moji_62" class="keisen">
+                                    <span class="moji">。</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
             </main>
