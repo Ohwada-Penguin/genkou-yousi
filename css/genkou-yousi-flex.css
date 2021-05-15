@@ -6,7 +6,7 @@
 @import url("./properties.css");
 
 /*膨大な文字量になるので各段落を外部に分けてる*/
-@import url("./danraku/danraku_1.css");
+@import url("./honbun/danraku_1.css");
 
 *{
     font-size:15px;
