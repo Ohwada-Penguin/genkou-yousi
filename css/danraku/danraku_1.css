@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url("../normalize.css");
+
+/*第◯段落のx文字目からy文字目までをほにゃららするCSS*/
+#danraku-1 .moji:nth-of-type(n+1):nth-of-type(-n+16){
+    opacity:0; 
+}
+
+#danraku-1-radio:checked+label li:nth-of-type(2) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*0)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(3) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*1)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(4) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*2)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(5) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*3)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(6) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*4)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(7) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*5)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(8) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*6)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(9) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*7)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(10) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*8)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(11) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*9)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(12) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*10)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(13) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*11)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(14) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*12)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(15) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*13)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(16) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*14)) 1 normal forwards;}
+#danraku-1-radio:checked+label li:nth-of-type(17) .moji{animation: fadein 500ms ease-in-out calc(500ms + calc(160ms*15)) 1 normal forwards;}
+
+#danraku-1-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation: markup 2000ms ease-in-out 0s infinite normal forwards;
+}
+
+#danraku-1-radio:checked + label .keisen{
+    border-color:#666;
+    animation: read 1000ms ease 0s 1 normal forwards;
+}

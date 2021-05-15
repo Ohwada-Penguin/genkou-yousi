@@ -2,6 +2,11 @@
 @import url("./normalize.css");
 @import url("./color_for_penguin.css");
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+@import url("./keyframes.css");
+@import url("./properties.css");
+
+/*膨大な文字量になるので各段落を外部に分けてる*/
+@import url("./danraku/danraku_1.css");
 
 *{
     font-size:15px;
@@ -60,7 +65,7 @@
 
 /*classの属性値として"bunsyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="bunsyou"みたいな単一でも機能するよ。*/
 /*ぶっちゃけ普通の[class~="bunsyou"]{}は.bunsyou{}と同じクラスセレクタ*/
-/*[class*="bunsyou"]{}だと <hoge class="bunsyouuuuuuuuuuuu"></hoge>も含んじゃうからここら辺注意ね*/
+/*[class^="bunsyou"]{}だと <hoge class="bunsyouuuuuuuuuuuu"></hoge>も含んじゃうからここら辺注意ね*/
 [class~=bunsyou]{
     display:inline-flex;
     flex-direction:row;
@@ -90,38 +95,32 @@
     border-width:1px 1px 1px 1px;
     border-style:dashed solid;    
 }
-
-/*[id*/
-[id^="moji_"]{
-    /*追々記述予定*/
+/*文字色設定*/
+.moji{ 
+    color:var(--color_kesizumi);
 }
 
-/*第◯段落のx文字目からy文字目までをほにゃららするCSS*/
-#danraku_1 .moji:nth-of-type(n+1):nth-child(-n+16){
-    /* animation: typing 3s steps(16) linear alternate; */
-    color:red;
-    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
-    /*animation: typing 4s ease-in-out 0 1 normal none;*/
+/*radioボタンcss*/
+input[name^="danraku"]{
+    /*見えなくしてるよ*/
+    display:none;
 }
-#danraku_1 li:nth-of-type(3){animation: typing 3s ease-in-out 0000ms 1 normal backwards;}
-/* #danraku_1 .moji:nth-of-type(n+2){animation: typing 5s ease-in-out 0.5s 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+3){animation: typing 6s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+4){animation: typing 7s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+5){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+6){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+7){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+8){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+9){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+10){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+11){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+12){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+13){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+14){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+15){animation: typing 4s ease-in-out 0 1 normal none;}
-#danraku_1 .moji:nth-of-type(n+16){animation: typing 4s ease-in-out 5s 1 normal none;} */
 
-@keyframes typing{
-    from{
-        opacity:0;
-    }
+#danraku-1-radio:not(:checked) ~ #danraku-2-radio+label{
+    visibility:hidden;
+}
+#danraku-1-radio:checked ~ #danraku-2-radio+label{
+    animation:var(--animation-bunsyou-ifchecked);
+    visibility:visible;
+}
+#danraku-2-radio:not(:checked) + label .moji{
+    opacity:0;
+}
+#danraku-2-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation: markup 2000ms ease-in-out 0s infinite normal forwards;
+}
+#danraku-2-radio:checked + label .keisen{
+    border-color:#666;
+    animation: read 2000ms ease 0s 1 normal forwards;
 }

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*プロパティ値のためのcssだよ〜*/
+:root{
+
+    /* animation */
+    /*文章全体をフェードイン*/
+    --animation-bunsyou-fadein:fadein 1500ms ease-in-out calc(500ms + calc(160ms*0)) 1 normal forwards;
+    /*一文字ずつフェードイン。連番は文字数に対応。*/
+    --animation-moji-1-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*0)) 1 normal forwards;
+    --animation-moji-2-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*1)) 1 normal forwards;
+    --animation-moji-3-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*2)) 1 normal forwards;
+    --animation-moji-4-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*3)) 1 normal forwards;
+    --animation-moji-5-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*4)) 1 normal forwards;
+    --animation-moji-6-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*5)) 1 normal forwards;
+    --animation-moji-7-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*6)) 1 normal forwards;
+    --animation-moji-8-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*7)) 1 normal forwards;
+    --animation-moji-9-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*8)) 1 normal forwards;
+    --animation-moji-10-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*9)) 1 normal forwards;
+    --animation-moji-11-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*10)) 1 normal forwards;
+    --animation-moji-12-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*11)) 1 normal forwards;
+    --animation-moji-13-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*12)) 1 normal forwards;
+    --animation-moji-14-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*13)) 1 normal forwards;
+    --animation-moji-15-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*14)) 1 normal forwards;
+    --animation-moji-16-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*15)) 1 normal forwards;
+    --animation-moji-17-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*16)) 1 normal forwards;
+    --animation-moji-18-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*17)) 1 normal forwards;
+    --animation-moji-19-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*18)) 1 normal forwards;
+    --animation-moji-20-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*19)) 1 normal forwards;
+    --animation-moji-21-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*20)) 1 normal forwards;
+    --animation-moji-22-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*21)) 1 normal forwards;
+    --animation-moji-23-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*22)) 1 normal forwards;
+    --animation-moji-24-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*23)) 1 normal forwards;
+
+    /*前段落がcheckedになった時に現段落の.keisen表示アニメーション*/
+    --animation-bunsyou-ifchecked:fadein 500ms ease-in-out 0s 1 normal forwards;
+}
